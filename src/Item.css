@@ -1,0 +1,145 @@
+body {
+    /* height: 100%; */
+    background-image: url(bg_2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*=====================================================================================*/
+
+/*=====================================================================================*/
+
+.custom-checkbox .custom-control-label::after, .custom-checkbox .custom-control-label::before {
+    border-radius: 50%;
+    position: absolute;
+    top: .75rem;
+    left: -1rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:focus~.custom-control-label::before, .custom-control-input:focus~.custom-control-label::after {
+    /* box-shadow: 0 0 10px -1px #000; */
+    box-shadow: none;
+    border-color: #adb5bd !important;
+}
+
+.custom-control-input:checked~.custom-control-label::after {
+    border-color: #000;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #000;
+    background-color: transparent;
+}
+
+.custom-checkbox .custom-control-input~.custom-control-label::after {
+    /* border-color: #000; */
+    background-image: url(check.svg);
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    border-color: #000;
+    background-color: #1b1f1b;
+}
+
+/*=====================================================================================*/
+
+/*=====================================================================================*/
+
+li {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.4s;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+li p {
+    color: #000;
+    transition: color 0.5s;
+}
+
+/*=====================================================================================*/
+
+form.add-todo+ul {
+    list-style: none !important;
+}
+
+.edit-todo, .edit-todo .input-group input.form-control {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.add-todo button {
+    font-size: 2rem;
+    border-color: transparent !important;
+    transition: background-color 0.6s;
+}
+
+.add-todo .input-group input.form-control {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 2rem;
+    transition: box-shadow 1.2s;
+    transition: border-color 0.8s;
+}
+
+.add-todo .input-group input.form-control:focus {
+    box-shadow: 0 0 5px -1px rgb(0, 0, 0) inset;
+    border-color: #000;
+}
+
+/* =========================================================== */
+
+/* =========================================================== */
+
+/* =========================================================== */
+
+button:focus {
+    box-shadow: none !important;
+}
+
+.delete, .drag, .edit {
+    margin: 6px 12px;
+    padding: 0;
+}
+
+.delete {
+    opacity: 0;
+}
+
+.drag {
+    cursor: grab !important;
+}
+
+/* =============================================================== */
+
+/* =============================================================== */
+
+/* =============================================================== */
+
+.input-group-text {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.save .input-group-text {
+    background-color: transparent;
+    color: #000;
+}
+
+.save .form-control {
+    margin: 5px;
+}
+
+.save .form-control:focus {
+    /* background: red !important; */
+    box-shadow: none !important;
+    /* border-color: green; */
+}

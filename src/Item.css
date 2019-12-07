@@ -78,16 +78,28 @@ form.add-todo+ul {
 }
 
 .add-todo button {
-    font-size: 2rem;
+    font-size: 1.3rem;
     border-color: transparent !important;
     transition: background-color 0.6s;
 }
 
 .add-todo .input-group input.form-control {
     background-color: rgba(255, 255, 255, 0.95) !important;
-    font-size: 2rem;
+    font-size: 1.3rem;
     transition: box-shadow 1.2s;
     transition: border-color 0.8s;
+}
+
+@media screen and (min-width: 576px) {
+    .add-todo button, .add-todo .input-group input.form-control {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .add-todo button, .add-todo .input-group input.form-control {
+        font-size: 2rem;
+    }
 }
 
 .add-todo .input-group input.form-control:focus {
@@ -112,6 +124,12 @@ button:focus {
 
 .delete {
     opacity: 0;
+}
+
+@media screen and ( max-width: 768px) {
+    .delete {
+        opacity: 1;
+    }
 }
 
 .drag {

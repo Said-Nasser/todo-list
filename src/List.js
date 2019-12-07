@@ -47,9 +47,9 @@ class List extends Component {
                             <div className="form-row">
                                 <div className="col-12">
                                     <div className="input-group">
-                                        <input className="form-control rounded-0 border-right-0 font-weight-lighter p-5" type="text" placeholder="Add New Item" ref={input => this.newText = input} />
+                                        <input className="form-control rounded-0 border-right-0 font-weight-lighter p-3 p-sm-3 p-md-5" type="text" placeholder="Add New Item" ref={input => this.newText = input} />
                                         <div className="input-group-prepend">
-                                            <button className="input-group-text btn btn-outline-light border- px-5"><FaPlus /></button>
+                                            <button className="input-group-text btn btn-outline-light border- px-3 px-sm-4 px-md-5"><FaPlus /></button>
                                         </div>
                                     </div>
                                 </div>

@@ -1,6 +1,11 @@
 {
   "name": "todo-list",
-  "version": "0.1.0",
+  "version": "1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Said-Nasser/todo-list.git"
+  },
+  "author": "Said Nasser",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",

@@ -1,3 +1,5 @@
+It is a React based application that comes with some features like adding, editing, and deleting todos. Built with the new ECMAScript syntax and Bootstrap framework.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
